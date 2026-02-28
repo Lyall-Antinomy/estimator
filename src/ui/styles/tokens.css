@@ -1,0 +1,34 @@
+@layer base {
+    :root {
+      --background: #ffffff;
+      --foreground: #171717;
+  
+      /* host app can inject these; safe defaults */
+      --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+        "Segoe UI Emoji";
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  
+      /* The Bureau tokens */
+      --bureau-green: #007231;
+      --bureau-green-10: rgba(0, 114, 49, 0.10);
+  
+      /* UI tokens */
+      --radius: 14px;
+  
+      /* neutrals */
+      --panel: rgba(255, 255, 255, 0.72);
+      --border: rgba(0, 0, 0, 0.12);
+      --muted: rgba(0, 0, 0, 0.55);
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+  
+        --panel: rgba(255, 255, 255, 0.06);
+        --border: rgba(255, 255, 255, 0.12);
+        --muted: rgba(255, 255, 255, 0.62);
+      }
+    }
+  }

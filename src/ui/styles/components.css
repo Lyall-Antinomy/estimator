@@ -1,0 +1,15 @@
+@layer components {
+    .bureau-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(10px);
+    }
+  
+    .bureau-focus {
+      outline: none;
+    }
+    .bureau-focus:focus-visible {
+      box-shadow: 0 0 0 4px var(--bureau-green-10);
+    }
+  }
